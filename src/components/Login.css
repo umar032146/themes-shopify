@@ -1,0 +1,97 @@
+.login{
+    background: linear-gradient(to right, #3f06b3, #ad04ca);
+    /* height: 100vh; */
+    padding: 15% 0;
+   margin: 0;
+    /* border: 1px solid orange; */
+}
+.loginform{
+    /* border: 1px solid black; */
+    width: 35%;
+    margin: 0% 32.5% ;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+.loginform h3{
+    padding:0%;
+    margin: 0%;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.loginform p{
+    padding: 0%;
+    margin: 0%;
+    margin: 2% 0;
+    font-size: 14px;
+   padding-left: 10px;
+}
+.loginform h4{
+    padding: 0%;
+    margin: 0%;
+    padding: 2% 0;
+    padding-left: 10px;
+    font-size: 26px;
+}
+.loginform label{
+    padding: 20px;
+}
+.loginform input{
+    height: 40px;
+    width: 90%;
+    margin: 0% 5%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.loginform button{
+    height: 40px;
+    width: 90%;
+    margin: 2% 5%;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(52, 52, 52);
+    color: white;
+}
+.loginform .signin{
+    text-align: center;
+    margin: 5% 0; 
+}
+.center{
+    text-align: center;
+    margin: 2% 0;
+}
+.social-row{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 5% 0;
+}
+.social-row i{
+    padding: 10px 30px;
+    background-color: rgb(235, 235, 235);
+    font-size: 20px;
+}
+.fa-facebook{
+    color: #1877F2;
+}
+.fa-google{
+    color: #f02f12;
+}
+.loginform p span{
+    color: #1877F2;
+}
+.loginform .marg{
+    padding: 5%;
+}
+@media screen and (max-width:450px){
+    .loginform{
+        width: 90%;
+        margin: 5%;
+    }
+    .social-row{
+        width: 100%;
+    }
+    .social-row i{
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,123 @@
+.template-container-a {
+    width: 400px;
+    height: 350px;
+  }
+  
+  .image-container-a {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    display: inline-block;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  
+  .laptop-image-a {
+    width: 400px;
+    height: 350px;
+    transition: transform 0.5s ease;
+    
+}
+  
+  .mobile-image-a {
+    border: 2px solid black;
+    width: 150px;
+    height: 250px;
+    border-radius: 15px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    transition: transform 0.5s ease;
+  }
+  
+  .move-up {
+    transform: translateY(-5px);
+  }
+  
+  .image-container-a:hover .laptop-image-a {
+    transform: scale(1.1);
+  }
+  
+  .template-info-a {
+    margin-top: 15px;
+    text-align: left;
+    width: 50%;
+  }
+  
+  .template-info-a h3 {
+    margin: 0%;
+    margin: 10px 0;
+
+  }
+  .template-info-a p{
+    margin: 0%;
+    padding: 0%;
+  }
+  .template-info-a .reviews-a {
+    display: inline-block;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 5px;
+  }
+  
+  .thumb-up-icon {
+    margin-left: 5px;
+    font-size: 1.2em;
+    color: black;
+  }
+  
+  .buttons-a {
+    margin: 0%;
+    margin-top: 60px;
+
+  }
+  
+  .button-a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: border 0.3s ease;
+  }
+  
+  .button.active-a {
+    border: 2px solid black;
+  }
+  .template-flex-a{
+    display: flex;
+  }
+
+  @media screen and (max-width:450px){
+   .template-container-a{
+    width: 90%;
+    margin: 5%;
+    margin-bottom: 20%;
+   } 
+   .image-container-a{
+    width: 100%;
+   }
+   .laptop-image-a{
+    width: 100%;
+   }
+   .mobile-image-a{
+    left: 10%;
+   }
+  }
+  @media screen and (min-width:500px) and (max-width:800px){
+    .template-container-a{
+      width: 300px;
+    }
+  
+    .image-container-a{
+      width: 100%;
+     }
+     .laptop-image-a{
+      width: 100%;
+     }
+     .mobile-image-a{
+      left: 10%;
+     }
+    }

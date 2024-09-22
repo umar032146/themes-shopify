@@ -1,0 +1,135 @@
+.template-container {
+    width: 200px;
+    height: 350px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    display: inline-block;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  
+  .laptop-image {
+    width: 200px;
+    height: 350px;
+    transition: transform 0.5s ease;
+    
+}
+  
+  .mobile-image {
+    border: 2px solid black;
+    width: 150px;
+    height: 250px;
+    border-radius: 15px;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    transition: transform 0.5s ease;
+  }
+  
+  .move-up {
+    transform: translateY(-5px);
+  }
+  
+  .image-container:hover .laptop-image {
+    transform: scale(1.1);
+  }
+  
+  .template-info {
+    margin-top: 15px;
+    text-align: left;
+    width: 50%;
+  }
+  
+  .template-info h3 {
+    margin: 0%;
+    margin: 10px 0;
+
+  }
+  .template-info p{
+    margin: 0%;
+    padding: 0%;
+  }
+  .template-info .reviews {
+    display: inline-block;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 5px;
+  }
+  
+  .thumb-up-icon {
+    margin-left: 5px;
+    font-size: 1.2em;
+    color: black;
+  }
+  
+  .buttons {
+    margin: 0%;
+    margin-top: 60px;
+
+  }
+  
+  .button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: border 0.3s ease;
+  }
+  
+  .button.active {
+    border: 2px solid black;
+  }
+  .template-flex{
+    display: flex;
+  }
+  @media screen and (max-width:450px){
+    .template-container{
+     width: 70%;
+     margin: 15%;
+     margin-bottom: 20%;
+     /* border: 1px solid blue; */
+    } 
+    .image-container{
+     width: 100%;
+     /* height: 100px; */
+    }
+    .laptop-image{
+     width: 100%;
+    }
+    .template-info{
+     position: relative;
+    }
+    .template-flex{
+     /* border: 5px solid blue; */
+     position: relative;
+     /* z-index: 1000;   */
+    }
+   }
+   @media screen and (min-width:500px) and (max-width:800px){
+    .template-container{
+      width: 200px;
+    }
+    .image-container{
+      width: 100%;
+      /* height: 100px; */
+     }
+     .laptop-image{
+      width: 100%;
+     }
+     .template-info{
+      position: relative;
+     }
+     .template-flex{
+      /* border: 5px solid blue; */
+      position: relative;
+      /* z-index: 1000;   */
+     }
+  
+    }
